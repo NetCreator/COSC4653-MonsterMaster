@@ -1,0 +1,109 @@
+Monster-
+
+Name: Twiggish
+Level: 5
+Exp: 254
+Str: 19
+Int: 10
+Def: 19
+Wis: 14
+Agi: 9
+HP: 30
+MP: 25
+
+Moves-
+Tree Tap
+Target: 1
+Damage: 18
+Cost: 10
+Type: 0
+
+Root Slap
+Target: 1
+Damage: 30
+Cost: 20
+Type: 0
+
+Solar Power
+Target: 0
+Damage: -70
+Cost: 50
+Type: 1
+
+Jungle Jamboree
+Target: 1
+Damage 100
+Cost: 80
+Type: 0
+
+Name: Scaldron
+Level: 5
+Exp: 254
+Str: 8
+Int: 21
+Def: 14
+Wis: 14
+Agi: 16
+HP: 24
+MP: 25
+
+Moves-
+Blaze
+Target: 1
+Damage: 15
+Cost: 5
+Type: 1
+
+Maul
+Target: 1
+Damage: 60
+Cost: 20
+Type: 0
+
+Searing Breath
+Target: 0
+Damage: 85
+Cost: 50
+Type: 1
+
+Pyroblast
+Target: 1
+Damage 250
+Cost: 150
+Type: 1
+
+Name: Fjorkshire
+Level: 5
+Exp: 254
+Str: 18
+Int: 14
+Def: 18
+Wis: 17
+Agi: 14
+HP: 38
+MP: 25
+
+Moves-
+Slobber
+Target: 1
+Damage: 25
+Cost: 12
+Type: 1
+
+Icy Spit
+Target: 1
+Damage: 35
+Cost: 18
+Type: 1
+
+Typhoon Rush
+Target: 1
+Damage: 95
+Cost: 55
+Type: 0
+
+Osmoasis
+Target: 0
+Damage -175
+Cost: 100
+Type: 1

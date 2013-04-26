@@ -1,0 +1,286 @@
+Monster-
+
+Name: Star-Breather
+Level: 99
+Exp: 1000602
+Str: 398
+Int: 398
+Def: 287
+Wis: 287
+Agi: 255
+HP: 475
+MP: 500
+
+Moves-
+Blink
+Target: 1
+Damage: 70
+Cost: 50
+Type: 0
+
+Sneeze
+Target: 1
+Damage: 100
+Cost: 100
+Type: 1
+                 
+Megaparsec Crunch
+Target: 1
+Damage: 500
+Cost: 300
+Type: 0
+
+Thousand-Year Nap
+Target: 0
+Damage: -1000
+Cost: 500
+Type: 0
+
+Name: Elysium
+Level: 35
+Exp: 46874
+Str: 43
+Int: 79
+Def: 63
+Wis: 79
+Agi: 52
+HP: 125
+MP: 100
+
+Moves-
+Song of Lament
+Target: 1
+Damage: 28
+Cost: 20
+Type: 1
+
+Halo
+Target: 0
+Damage: -40
+Cost: 33
+Type: 1
+                 
+Hallowed Ascension
+Target: 1
+Damage: 50
+Cost: 60
+Type: 1
+
+Holy Joust
+Target: 1
+Damage: 45
+Cost: 50
+Type: 0
+
+Name: Basilisk
+Level: 33
+Exp: 39510
+Str: 75
+Int: 35
+Def: 70
+Wis: 50
+Agi: 60
+HP: 100
+MP: 90
+
+Moves-
+Poisoned Bite
+Target: 1
+Damage: 35
+Cost: 20
+Type: 0
+
+Fierce Slam
+Target: 1
+Damage: 50
+Cost: 33
+Type: 0
+                 
+Thrash
+Target: 1
+Damage: 100
+Cost: 80
+Type: 0
+
+Glare
+Target: 1
+Damage: 45
+Cost: 10
+Type: 1
+
+Monster-
+Name: Jigsaw
+Level: 21
+Exp: 10341
+Str: 45
+Int: 16
+Def: 37
+Wis: 25
+Agi: 34
+HP: 87
+MP: 56
+
+Moves-
+Gnash
+Target: 1
+Damage: 20
+Cost: 14
+Type: 0
+
+Dire Rush
+Target: 1
+Damage: 40
+Cost: 33
+Type: 0
+                 
+Monster-
+Name: Grulax
+Level: 14
+Exp: 5071
+Str: 26
+Int: 26
+Def: 48
+Wis: 35
+Agi: 21
+HP: 79
+MP: 45
+
+Moves-
+Heavy Hand
+Target: 1
+Damage: 20
+Cost: 15
+Type: 0
+
+Gourmet
+Target: 0
+Damage: -35
+Cost: 25
+Type: 0
+                 
+Light Tap	
+Target: 1	   
+Damage: 12          
+Cost: 8	
+Type: 0	
+
+Monster-
+Name: Thales
+Level: 17
+Exp: 5653
+Str: 19
+Int: 32
+Def: 27
+Wis: 38
+Agi: 33
+HP: 67
+MP: 36
+
+Moves-
+Shock
+Target: 1
+Damage: 15
+Cost: 10
+Type: 1
+
+Kick
+Target: 1
+Damage: 20
+Cost: 15
+Type: 0
+                 
+Lightning Spear	
+Target: 1	   
+Damage: 80          
+Cost: 80	
+Type: 1	
+
+Name: Woodfall
+Level: 3
+Exp: 90
+Str: 10
+Int: 6
+Def: 8
+Wis: 6
+Agi: 5
+HP: 26
+MP: 20
+
+Moves-
+Hammer
+Target: 1
+Damage: 10
+Cost: 5
+Type: 0
+
+Cry
+Target: 1
+Damage: 15
+Cost: 15
+Type: 1
+
+Name: Juman
+Level: 2
+Exp: 47
+Str: 8
+Int: 8
+Def: 7
+Wis: 6
+Agi: 5
+HP: 18
+MP: 18
+
+Moves-
+Firm Grip
+Target: 1
+Damage: 15
+Cost: 8
+Type: 0
+
+Psychout
+Target: 1
+Damage: 20
+Cost: 13
+Type: 1
+
+Vice Clamp
+Target: 1
+Damage 50
+Cost: 30
+Type: 0
+
+Name: Ghazal the Luminous Dragon
+Level: 2
+Exp: 47
+Str: 6
+Int: 11
+Def: 5
+Wis: 5
+Agi: 9
+HP: 15
+MP: 40
+
+Moves-
+Blinding Distraction
+Target: 1
+Damage: 20
+Cost: 10
+Type: 1
+
+Unexpected Flash
+Target: 1
+Damage: 15
+Cost: 5
+Type: 1
+
+Solar Flare
+Target: 1
+Damage: 80
+Cost: 70
+Type: 1
+
+Moon Eater
+Target: 0
+Damage: -100
+Cost: 150
+Type: 1
