@@ -343,6 +343,8 @@ void clientHandler(int connfd) {
                 break;
         }
         
+        dprintf(connfd, "%d", packetId_out);
+        
         if (/*No account registered*/0) {
             
             // Create a new account

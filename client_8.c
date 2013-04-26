@@ -43,14 +43,15 @@ int connectTo(char *ipAddress, int portNumber);
 
 int main(int argc, char *argv[])
 {
-    char inputLine[MAX_LINE_LENGTH];
-    char option;
+    char *username;
+    char *password;
     char buffer[MAX_LINE_LENGTH];
     char *message;
-    char sector_id[MAX_MESSAGE_TEXT];
     int nbrOfBytesRead;
     struct sigaction sigTermAction;
     struct sigaction sigPipeAction;
+    PacketType packetId_in;
+    PacketType packetId_out;
     char ipAddress[MAX_IP_ADDRESS_LENGTH];
     int portNumber = SERVER_PORT_PVE;
     bool isPvE;
@@ -80,19 +81,41 @@ int main(int argc, char *argv[])
     socketfd = connectTo();
     
     // 1. Begin communication by sending in a username and password
+    //############################################################################################
+    fprintf(stdout, "Please enter in your username and password:\n"
+            "Username: ");
+    fscanf(stdin, "%s", username);
+    fprintf(stdout, "Password: ");
+    fscanf(stdin, "%s", password);
+    packetId_out = C_AUTH_LOGIN;
     
     // 2. Sends back a login confirmation
     
-    if (/*s_auto_login_invalid*/) {
+    dprintf(socketfd, "%d", (int *)packetId_out);
+    
+    nbrOfBytesRead = read(socketfd, buffer, sizeof(buffer);
+    //############################################################################################
+    
+    if ()/*s_auto_login_invalid*/) {
         
         // 2a. Wrong password, but registered user
         if (/*bad_passwd*/) {
-            perror("Your username/password did not match. Please try
+            perror("Your username/password did not match. Please try"
                    "again.\n\n");
             exit(0);
         } // End if
         
         // 2b. Create a new account
+        fprintf(stdout, "Username is not in the system. Account creation activated.\n\n"
+                "Please enter in your new account username and password:\n"
+                "Username: ");
+        fscanf(stdin, "%s", username);
+        fprintf(stdout, "Password: ");
+        fscanf(stdin, "%s", password);
+        
+        packetId_out = C_AUTH_ACCOUNT_CREATE;
+        
+        dprintf(socketfd, "%d", (int *)packetId_out);
         
         // 2c. Create account failed (probably due to this username already being taken)
         if (/*s_auth_account_create_invalid*/) {
@@ -207,8 +230,6 @@ int connectTo(char *ipAddress, int portNumber) {
     
     struct sockaddr_in serverAddress;
     int status;
-    PacketType packetId_in;
-    PacketType packetId_out;
     
     // Connect to server
     socketfd = socket(AF_INET, SOCK_STREAM, 0);

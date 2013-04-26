@@ -48,7 +48,6 @@ void sig_pipe(int signo);
 // Global Variables
 int listenfd;
 int connfd;
-char fifoName[FIFO_NAME_LENGTH];
 
 int main(int argc, char *argv[])
 {
@@ -62,11 +61,16 @@ int main(int argc, char *argv[])
     struct sigaction sigChldAction;
     struct sigaction sigTermAction;
     struct sigaction sigPipeAction;
-    sprintf(fifoName, PARENT_FIFO);
     
     // Initialize the fifo file for client handling
-    if ( (mkfifo(fifoName, (S_IRUSR | S_IWUSR) ) ) == -1) {
-        perror("Error creating the fifo:'n");
+    if ( (mkfifo(PARENT_FIFO, (S_IRUSR | S_IWUSR) ) ) == -1) {
+        perror("Error creating the fifo:\n");
+        exit(1);
+    }
+    
+    if (errno == EEXIST) {
+        perror("Fifo already exists\n");
+        exit(1);
     }
     
     // Create a listening socket
