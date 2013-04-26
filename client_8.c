@@ -94,9 +94,9 @@ int main(int argc, char *argv[])
     dprintf(socketfd, "%d", (int *)packetId_out);
     
     nbrOfBytesRead = read(socketfd, buffer, sizeof(buffer);
-    //############################################################################################
-    
-    if ()/*s_auto_login_invalid*/) {
+                          //############################################################################################
+                          
+                          if ()/*s_auto_login_invalid*/) {
         
         // 2a. Wrong password, but registered user
         if (/*bad_passwd*/) {
@@ -124,7 +124,6 @@ int main(int argc, char *argv[])
         } // End if
     } // End if
     
-    
     // Infinite loop until connection is terminated
     while (connectionDesired) {
         
@@ -135,16 +134,26 @@ int main(int argc, char *argv[])
             //        1. Train In The Wilds!
             //        2. Show My Monster Stats!
             //        3. Migrate to PvP Server!
-            //        4. Quit Monster Mash!
+            //        4. Quit Monster Master!
+            fprintf(stdout, "Monster Master!\n\n"
+                    "Choose an action:\n"
+                    "   1. Train in the Wilds!"
+                    "   2. Show my Monster's Stats!"
+                    "   3. Migrate to PvP Server!"
+                    "   4. Quit Monster Master!\n\n");
+            fscanf(stdin, "%d", selection);
             
             // 4. Send the correct packet to the server based on the choice above
             
-            switch (/*Selection*/) {
-                case /*c_battle_init*/:
+            switch (selection)) {
+                case 1:
                     // 4a. Begin a battle [function?]
+                    packetId_out = C_BATTLE_INIT;
+                    
                     break;
                 case /*c_monster_stats_req*/:
                     // 4b. Output my monster stats [function?]
+                    packetId_out = C_MONSTER_STATS_REQ;
                     
                     // Print out monster's stats in the following format:
                     /*
@@ -176,16 +185,23 @@ int main(int argc, char *argv[])
                     break;
                 case /*c_server_swap*/:
                     // 4c. Swap to the PvP server [function?]
+                    packetId_out = C_SERVER_SWAP;
+                    
                     break;
                 case /*c_auth_logout*/:
                     // 4d. Begin the logout process [function?]
                     //      **Don't forget the c_auth_logout_ack**
+                    packetId_out = C_AUTH_LOGOUT;
+                    
                     connectionDesired = false;
+                    
                     break;
                 default:
                     // *. There was an error
                     break;
             } // End switch
+            
+            dprintf(socketfd, "%d", (int *)packetId_out);
             
         } // End PvE
         else {
